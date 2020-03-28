@@ -3,20 +3,20 @@ const mongoose = require("../database");
 const UserSchema = new mongoose.Schema({
   name: {
     type: String,
-    require: true
+    required: true
   },
   email: {
     type: String,
-    require: true
+    required: true
   },
   occupation: {
     type: String,
-    require: true
+    required: true
   },
   created: {
     type: Date,
     default: Date.now,
-    require: true
+    required: true
   }
 });
 
